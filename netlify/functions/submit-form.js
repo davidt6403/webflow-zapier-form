@@ -1,5 +1,7 @@
+// 🔁 Force redeploy - timestamp: March 25, 2025
 exports.handler = async function (event, context) {
-    // ✅ Handle preflight request for CORS
+    // 🔁 Dummy redeploy comment
+// ✅ Handle preflight request for CORS
     if (event.httpMethod === 'OPTIONS') {
       return {
         statusCode: 200,
@@ -56,4 +58,4 @@ exports.handler = async function (event, context) {
       body: 'Method Not Allowed',
     };
   };
-  
+  // 🔁 Redeploy trigger - no logic change
